@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth!important;
+    /*
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #BC2EFF rgb(0,0,0,0);
+      }
+      
+      *::-webkit-scrollbar {
+        width: 15px;
+      }
+      
+      *::-webkit-scrollbar-track {
+        background: rgb(0,0,0,0);
+        border: .5px solid white;
+      }
+      
+      *::-webkit-scrollbar-thumb {
+        background-color: $primary-color;
+        border-radius: 0px;
+        border: 0px solid rgb(0,0,0,0);
+      }
+      */
+}
+
+#content {
+  max-width: 100vw;
+  // margin-top: 130px; 
+}
+
+.c-container {
+  @apply max-w-[1440px] mx-auto w-full;
+ }
+
+//posts
+.post {
+    max-width: $large;
+    margin: auto;
+
+    p {
+        margin-bottom: rem(20px);
+    }
+}
+
+.post-content{
+  p {
+    line-height: 26px;
+  }
+
+  a {
+    color: $primary-color;
+  }
+}
+
+.comments-area {
+    max-width: $large;
+    margin: auto;
+    margin-top: rem(40px);
+}
+
+.contactForm{
+  @apply border pt-[60px]  pb-[47px] w-full border-[#D4D4D4] rounded-[16px] max-w-[750px] pr-5 pl-5 mx-auto md:pl-[72px] lg:pl-[108px] md:pr-[30px] lg:pr-[90px];
+}
+
+.contactForm{
+
+  form{
+    @apply space-y-5;
+  }
+
+  #fullNameInput{
+    @apply flex flex-col space-y-5 md:space-y-0 md:flex-row md:items-center md:space-x-[24px];
+  }  
+
+  .fieldset{
+    @apply flex flex-col space-y-4 w-full;
+  }
+
+  .fieldset{
+    p{
+      @apply font-semibold leading-[18px];
+    }
+
+    input, textarea{
+      @apply outline-none border border-[#D4D4D4] rounded-[10px] w-full max-w-full resize-none;
+    }
+    
+  }
+
+  .submitContact{
+    @apply w-full flex justify-center;
+  }
+
+  .submitContact{
+
+    input{
+      height:  auto!important;
+    }
+
+    input{
+      @apply bg-primary cursor-pointer hover:scale-105 transition duration-150 rounded-[10px] py-[18px] px-8 text-white text-center;
+    }
+
+  }
+
+}
+
+@media(min-width: 1080px){
+  .workspace{
+    @apply max-w-workspace;
+  }
+}
+
+@media(min-width: 1080px){
+  .content{
+    @apply max-w-content;
+  }
+}
+
+@media(min-width: 1080px){
+  .comunidad{
+    @apply max-w-comunidad;
+  }
+}
+
+@media(min-width: 1080px){
+  .alimentacion{
+    @apply max-w-alimentacion;
+  }
+}
+
+@media(min-width: 1080px){
+  .emprendimientos{
+    @apply max-w-emprendimientos;
+  }
+}
+
+@media(min-width: 1080px){
+  .bienestar{
+    @apply max-w-bienestar;
+  }
+}
+
+@media(min-width: 1080px){
+  .educacion{
+    @apply max-w-educacion;
+  }
+}
+
+@media(min-width: 1080px){
+  .hospitality{
+    @apply max-w-hospitality;
+  }
+}
+
+

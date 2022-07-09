@@ -1,0 +1,35 @@
+/**
+ * entry file for Tailwind CSS
+ * and other style files
+ */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+// #svgsContainer svg{
+//   margin: 0;
+// }
+
+.wp-block-paragraph{
+  display: none !important;
+}
+
+.swiper-scrollbar-drag{
+  @apply bg-primary h-2 rounded-xl;
+}
+
+
+//functions
+@import "functions/_rem";
+
+@import "_variables";
+@import "_fonts";
+@import "_globals";
+@import "_utilities";
+@import "_spiners";
+@import "_contactForm";
+@import "_footer";
+@import "_buttons";
+@import "_forms";
+@import "_navigation";
+

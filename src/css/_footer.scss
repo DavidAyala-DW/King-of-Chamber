@@ -1,0 +1,52 @@
+
+@property --gradient-start {
+  syntax: "<color>";
+  initial-value: transparent;
+  inherits: false;
+}
+
+@property --gradient-inter {
+  syntax: "<color>";
+  initial-value: transparent;
+  inherits: false;
+}
+
+@property --gradient-end {
+  syntax: "<color>";
+  initial-value: transparent;
+  inherits: false;
+}
+
+.footerGradient1 {
+
+  --gradient-start: #2C91DB;
+  --gradient-inter: #8600C5;
+  --gradient-end: #8B1C80;
+
+  transition: .4s ease-in-out --gradient-start,.4s ease-in-out --gradient-inter, .4s ease-in-out --gradient-end;
+  -webkit-transition: .4s ease-in-out --gradient-start,.4s ease-in-out --gradient-inter, .4s ease-in-out --gradient-end;
+  -moz-transition:.4s ease-in-out --gradient-start,.4s ease-in-out --gradient-inter, .4s ease-in-out --gradient-end;
+  -o-transition: .4s ease-in-out --gradient-start,.4s ease-in-out --gradient-inter, .4s ease-in-out --gradient-end;
+
+  background: linear-gradient(
+    101.76deg,
+    var(--gradient-start) 0%,
+    var(--gradient-inter) 47%,
+    var(--gradient-end) 98.08%
+  );
+}
+
+@media(min-width:768px){
+  
+  .footerGradient1:hover{
+    --gradient-start: #8B1C80;
+    --gradient-inter: #8600C5;
+    --gradient-end: #2C91DB;  
+  }
+  
+  .footerGradient2 {
+    --gradient-start: #8600C5;
+    --gradient-end: #0BC6E3;
+  }
+
+}

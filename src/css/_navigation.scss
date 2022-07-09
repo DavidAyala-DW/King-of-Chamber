@@ -1,0 +1,189 @@
+.mobile-navigation {
+  @apply md:hidden sticky bg-white border-t border-gray-200 bottom-0 z-50 py-2;
+}
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––
+    Based on: https://codepen.io/nickelse/pen/YGPJQG
+    Influenced by: https://sproutsocial.com/
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+  nav.main-menu, nav.mobile-drawer {
+    /* #Mega Menu Styles
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+    .logo img, .custom-logo{
+        max-width: 207px;
+        @media(min-width:768px){
+          max-width: 207x;
+        } 
+    }
+
+  
+    .mega-menu {
+      display: none;
+      left: 0;
+      right:0;
+      top: 58px;
+      position: absolute;
+      text-align: left;
+      width: 100%;
+      max-width: 100%;
+      .grid {
+        max-width: 870px;
+      }
+    }
+  
+  
+  
+    /* #hoverable Class Styles
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .hoverable {
+      position: static;
+    }
+  
+    .hoverable:hover .mega-menu {
+      display: block;
+    }
+  
+  
+    /* #toggle Class Styles
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+    .toggleable > label:after {
+      content: "\25BC";
+      font-size: 10px;
+      padding-left: 6px;
+      position: relative;
+      top: -1px;
+    }
+  
+    .toggle-input {
+      display: none;
+    }
+    .toggle-input:not(checked) ~ .mega-menu {
+      display: none;
+    }
+  
+    .toggle-input:checked ~ .mega-menu {
+      display: block;
+    }
+  
+    .toggle-input:checked + label {
+      color: white;
+      background: #2c5282; /*@apply bg-blue-800 */
+    }
+  
+    .toggle-input:checked ~ label:after {
+      content: "\25B2";
+      font-size: 10px;
+      padding-left: 6px;
+      position: relative;
+      top: -1px;
+    }
+  
+    .is-search-form {
+        input {
+          height: 36px;
+          margin-top: 8px;
+        }
+    }
+  }
+  
+  //Mobile
+  
+  
+  .body-menu-drawer-open {
+      background-color: #070707;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 10;
+      opacity: 0.4;
+  }
+  
+  .no-scroll{
+      height: 100%;
+      overflow: hidden;
+  }
+  
+  
+  $drawer_width: 100vw;
+  nav.mobile-drawer {
+      ul {
+          
+          width: $drawer_width;
+          position: fixed;
+          left: 0 - $drawer_width;
+          &.active{
+              left:0
+          }
+          .arrow-wrapper {
+            margin-top: rem(4px);
+          }
+      }
+  }
+  
+  
+  
+  //menu icon
+  
+  .mobile-drawer {
+      // mobile menu styling / animating
+      &__icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: transparent;
+        border: none;
+        padding: 0;
+        right: 1.5rem;
+        top: 20px;
+  
+        &:focus {
+          outline: none;
+        }
+  
+        .bar-one,
+        .bar-two,
+        .bar-three {
+          width: 1.5rem;
+          height: 2px;
+          background: rgb(0, 0, 0);
+          border-radius: 10px;
+          transition: all 0.3s linear;
+          position: relative;
+          transform-origin: 1px;
+        }
+  
+        .bar-one {
+          transform: rotate(0);
+        }
+  
+        .bar-two {
+          opacity: 1;
+          transform: translateX(0);
+        }
+  
+        .bar-three {
+          transform: rotate(0);
+        }
+      }
+  
+      &__open {
+        .bar-one {
+          transform: rotate(45deg);
+        }
+  
+        .bar-two {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+  
+        .bar-three {
+          transform: rotate(-45deg);
+        }
+      }
+    }
