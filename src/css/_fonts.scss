@@ -1,25 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Ubuntu:wght@700&display=swap');
-// p,a,span,li,input,label,div{
-//     @apply font-content;
-// }
-
-h1,
-h2,
-h3,
-h4 {
-    @apply font-bold text-black;   
-}
-h1{
-    @apply text-3xl leading-[3rem] md:text-5xl md:leading-[4rem];
-}
-
-h2{
-    @apply text-5xl text-[2.5rem]  leading-[3.5rem];
-}
-h3{
-    @apply text-4xl;
-}
-h4{
-    @apply text-3xl;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body,*{
+    font-family: 'Poppins', sans-serif;
 }

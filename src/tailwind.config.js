@@ -12,26 +12,24 @@ module.exports = {
     extend: { 
 
       colors: {
-       "primary" : "#189E81",
-       "secondary" : "#1fcaa5"
-      },
-      maxWidth: {
-        "workspace": "778.5px",
-        "comunidad" : "866px",
-        "content": "866px",
-        "alimentacion": "902px",
-        "emprendimientos" : "902px",
-        "bienestar" : "902px",
-        "educacion": "902px",
-        "hospitality": "902px"
-      },
-      backgroundImage : {
-        "espacios-de-trabajo" : "linear-gradient(57.15deg, rgba(0, 0, 0, 0.69) 28.99%, rgba(0, 0, 0, 0.15) 66.29%, rgba(0, 0, 0, 0) 86.14%);",
-        "comunidad" : "linear-gradient(57.15deg, rgba(0, 0, 0, 0.69) 28.99%, rgba(0, 0, 0, 0.15) 66.29%, rgba(0, 0, 0, 0) 86.14%);"
+       "primary" : "#0079B5",
+       "secondary" : "#0C0C0C",
+       "green" : "#259452",
       }
 
-    
-    }
+    },
+    screens: {
+      'sm': '480px',
+      'sm2': '580px',
+      'md': '768px',
+      'md2': '980px',
+      'lg': '1024px',
+      'lg2': '1120px',
+      'xl': '1280px',
+      'footer': '1362px',
+      'desk': '1440px',
+      '2xl': '1536px'
+    },
 
   },
   content: [

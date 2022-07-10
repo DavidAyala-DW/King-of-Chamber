@@ -192,17 +192,17 @@ function create_posttype()
 
 // include __DIR__."/components/index.php";
 
-foreach (glob(get_template_directory() . "/components/*.php") as $file) {
+foreach (glob(get_template_directory() . "/snippets/*.php") as $file) {
 
 	$file= str_replace(".php","",basename($file));
-	get_template_part("components/{$file}");
+	get_template_part("snippets/{$file}");
 	
 }
 
-foreach (glob(get_template_directory() . "/all-sections/*.php") as $file) {
+foreach (glob(get_template_directory() . "/sections/*.php") as $file) {
 
 	$file= str_replace(".php","",basename($file));
-	get_template_part("all-sections/{$file}");
+	get_template_part("sections/{$file}");
 	
 }
 
